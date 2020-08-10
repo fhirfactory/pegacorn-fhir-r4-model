@@ -25,8 +25,6 @@ package net.fhirfactory.pegacorn.fhir.r4.model.enriched;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.model.api.annotation.ResourceDef;
-import net.fhirfactory.pegacorn.fhir.r4.model.common.CareTeamPC;
-import net.fhirfactory.pegacorn.fhir.r4.model.common.GroupPC;
 import net.fhirfactory.pegacorn.fhir.r4.model.common.OrganisationPC;
 import net.fhirfactory.pegacorn.fhir.r4.model.common.helpers.GroupExtensionMeanings;
 import org.slf4j.Logger;
