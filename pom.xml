@@ -44,6 +44,19 @@ THE SOFTWARE.
     </properties>
     
     <dependencies>
+    
+    	<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.2</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
+            <version>${version-javax.enterprise-cdi-api}</version>
+            <scope>provided</scope>
+        </dependency>
 
         <!-- This dependency includes the core HAPI-FHIR classes -->
         <dependency>
@@ -90,6 +103,14 @@ THE SOFTWARE.
             <artifactId>jackson-databind</artifactId>
             <version>${version-com.fasterxml.jackson.core-jackson-databind}</version>
             <type>jar</type>
+        </dependency>
+        
+        <dependency>
+        	<groupId>net.fhirfactory.pegacorn</groupId>
+        	<artifactId>pegacorn-platform-commoncode</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <scope>compile</scope>
         </dependency>
 
 
