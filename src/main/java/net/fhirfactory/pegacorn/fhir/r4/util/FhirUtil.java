@@ -9,8 +9,12 @@ public class FhirUtil {
         return INSTANCE;
     }
     
-    private FhirContext fhirContext = FhirContext.forR4();
-        
+    private FhirContext fhirContext;
+
+    private FhirUtil() {
+        fhirContext = FhirContext.forR4();
+    }
+    
     /**
      * NOTE: the result is thread safe.
      * 
